@@ -47,13 +47,30 @@ Within a tier, findings sort by blast radius: data loss > outage > degradation >
 
 ## Install
 
-Local / development:
+This repo is both a **plugin** and its own **marketplace**. Two files make that work:
+
+- `.claude-plugin/plugin.json` — the plugin manifest (declares the plugin).
+- `.claude-plugin/marketplace.json` — the marketplace catalog (lists this plugin for
+  install, with `source: "./"` pointing at the repo root).
+
+Agents and skills are auto-discovered from `agents/` and `skills/` — no extra wiring.
+
+**Install from GitHub** — in a Claude Code session:
+
+```
+/plugin marketplace add fluidbubbles/timebomb-hunter
+/plugin install timebomb-hunter@timebomb-hunter
+```
+
+The first command registers this repo's `marketplace.json`; the second installs the
+plugin. The `name@name` form is `plugin-name@marketplace-name` — both happen to be
+`timebomb-hunter` here.
+
+**Local / development** — load straight from a checkout, no marketplace:
 
 ```
 claude --plugin-dir /path/to/timebomb-hunter
 ```
-
-Or register the directory in a marketplace and install from there.
 
 ## Usage
 
