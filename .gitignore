@@ -1,0 +1,5 @@
+.DS_Store
+
+# Local scan outputs, if the plugin is ever run against its own repo
+timebomb-hunter-reports/
+.timebomb-hunter/

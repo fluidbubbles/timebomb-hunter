@@ -1,0 +1,18 @@
+{
+  "name": "timebomb-hunter",
+  "version": "0.1.0",
+  "description": "Spawns a team of agents that hunt scale timebombs — concurrency, multi-tenant isolation, resource exhaustion, and idempotency bugs that work today and detonate as users grow.",
+  "author": {
+    "name": "Danial",
+    "email": "rusdanyal@gmail.com"
+  },
+  "keywords": [
+    "concurrency",
+    "scalability",
+    "multi-tenancy",
+    "race-conditions",
+    "code-analysis",
+    "audit"
+  ],
+  "license": "MIT"
+}

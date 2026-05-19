@@ -1,0 +1,14 @@
+{
+  "name": "timebomb-hunter",
+  "description": "Local marketplace for the timebomb-hunter plugin — scale-timebomb auditing for TypeScript / Postgres codebases.",
+  "owner": {
+    "name": "Danial"
+  },
+  "plugins": [
+    {
+      "name": "timebomb-hunter",
+      "source": "./",
+      "description": "Spawns a team of agents that hunt scale timebombs — concurrency, multi-tenant isolation, resource exhaustion, and idempotency bugs that work today and detonate as users grow."
+    }
+  ]
+}
